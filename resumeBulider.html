@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading{
+            background-color: cornflowerblue;
+            border: 10px solid rgb(83, 118, 184);
+            display: block;
+        }
+        table{
+            text-align: center;
+        }
+        .main{
+            display: flex;
+        }
+        .resume{
+            
+            border: 3px solid rgb(228, 213, 81);
+            height: 600px;
+            width: 700px;
+            padding: 20px;
+            background-color: bisque;
+            
+        }
+        .data{
+            
+            border: 3px solid rgb(61, 61, 168);
+            height: 600px;
+            width: 700px;
+            padding: 20px;
+            background-color: rgb(112, 187, 190);
+            
+        }
+        img{
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <center><h1 class="heading">RESUME BUILDER  </h1></center>
+    <div class="main">
+    <div class="resume">
+       <table>
+        <tr>
+            <td>
+        <img src="/Ipshita_passportsize.jpg" alt=""></td>
+       
+           <td> 
+        <h1 id="name1"></h1></td>
+        </tr>
+        <center>
+            <tr> <td><b> CLASS :</b></td></tr>
+        <tr><td><h2 id="class1"></h2></td></tr>
+
+        <tr><td><b> PROGRAMMING SKILLS :</b></td></tr>
+
+        <tr><td><h4 id="l1"></h4></td></tr>
+        <tr><td><h4 id="l2"></h4></td></tr>
+         <tr><td><h4 id="l3"></h4></td></tr>
+        </center>
+        </table>
+        
+
+
+    </div>
+<center>
+    <div class="data">
+        YOUR NAME : <br><input type="text" id="aa"><br>
+        Class :  <br><input type="text" name="" id="bb"><br> <br>
+        Programming Skills :  <br> <br>
+            <input type="text" id="cc"><br>
+            <input type="text" id="dd"><br>
+            <input type="text" id="ee">
+        
+        <br>
+        <button onclick="resume()"> SUBMIT</button>
+    </div>
+    </div>
+    </center>
+    <script>
+function resume(){
+    let a=document.getElementById("aa");
+    let a1= a.value;
+    document.getElementById("name1").innerHTML=a1;
+
+    let b = document.getElementById("bb");
+    let b1= b.value;
+    document.getElementById("class1").innerHTML=b1;
+
+    let c=document.getElementById("cc");
+    let c1=c.value;
+    document.getElementById("l1").innerHTML=c1;
+
+    let d=document.getElementById("dd");
+    let d1=d.value;
+    document.getElementById("l2").innerHTML=d1;
+
+    let e=document.getElementById("ee");
+    let e1=e.value;
+     document.getElementById("l3").innerHTML=e1; 
+
+
+}
+    </script>
+</body>
+</html>
